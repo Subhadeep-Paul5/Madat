@@ -1,290 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QDC2G7LCZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0QDC2G7LCZ');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Madat</title>
-  <!-- Bootstrap CSS -->
+  <title>ECs-Madat</title>
   <link rel="icon" type="image/png" sizes="16x16" href="Madat logo.png">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="ECS.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{
+    font-family: 'Times New Roman', Times, serif;
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .overflow-x-auto::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .overflow-x-auto {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    /* Set images to retain their actual size */
+    .img-fluid {
+      max-width: 371px; /* Allow images to retain their original size */
+      height: 400px;    /* Maintain aspect ratio */
+      border-radius: 10px;
+    }
+    .x{
+        max-width: 340px; /* Allow images to retain their original size */
+      height: 180px;    /* Maintain aspect ratio */
+      border-radius: 15px;
+    }
+  </style>
 </head>
-<body>
+<body class="bg-gray-50">
 
-  <!-- Fixed Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="madat.png" alt="logo" class="logo-img" style="height: 40px;">
-        Madat
-    </a>
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="bg-white p-4 shadow fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Brand Logo -->
+      <div class="flex items-center">
+        <img src="madat.png" alt="Brand Logo" class="h-8 w-8 mr-2 rounded-lg"> <!-- Add your logo path here -->
+        <a href="#" class="text-gray-800 text-lg font-semibold">Madat</a>
+      </div>
+  
+      <!-- Menu Toggle Button (hidden on larger screens) -->
+      <button id="menuToggle" class="text-gray-600 lg:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+  
+      <!-- Desktop Menu -->
+      <div id="menu" class="hidden lg:flex space-x-4 items-center">
+        <a href="index.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">Home</a>
+        <a href="ECs.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">Extracurriculars</a>
+        <a href="aboutus.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">About Us</a>
+      </div>
+  
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="lg:hidden hidden flex-col mt-4 bg-white p-4 rounded-md shadow-md transition duration-300 ease-in-out space-y-3">
+        <a href="index.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">Home</a>
+        <a href="ECs.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">Extracurriculars</a>
+        <a href="aboutus.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">About Us</a>
+      </div> 
+    </div> 
+</nav>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html"><b>Home</b></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="ECs.html"><b>Extracurriculars</b></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="aboutus.html"><b>About Us</b></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
-<!-- Main Content -->
-<div class="container mt-4">
-    <section>
-        <h1><b>"We Understand, We Understand Everyone has their Own Choices Check the ECs You Desire"</b></h1>
-        <h1><br><b>Internships</b></h1>
-        <h2>Here are some Internships for high school students:</h2>
-        <!-- Horizontal Scrolling Container -->
-<br>
-    <div class="scroll-container">
-      <!-- First Image -->
-      <div class="scroll-item">
-        <a href="https://www.cee.org/programs/research-science-institute">
-        <img src="1.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="https://simr.stanford.edu/">
-            <img src="2.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="https://www.nasa.gov/learning-resources/internship-programs/nasa-intern-and-fellow-opportunities-for-international-students/">
-                    <img src="3.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="https://www.stonybrook.edu/commcms/garcia/summer_program">
-            <img src="4.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="https://www.ll.mit.edu/outreach/llrise">
-            <img src="5.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="https://cssicurriculum.withgoogle.com/">
-            <img src="6.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="">
-            <img src="7.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="https://www.tellurideassociation.org/our-programs/">
-            <img src="8.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="https://www.si.edu/ofi">
-            <img src="9.png" class="img-fluid"></a>
-      </div>
-      <div class="scroll-item">
-        <a href="https://www.training.nih.gov/research-training/pb/sip/">
-            <img src="10.png" class="img-fluid"></a>
-      </div>
-    </div>
-        <h1><br><b>Debates</b></h1>
-        <h2>Here are some debate competitions for high school students:</h2>
-<br>
-        <div class="scroll-container">
-            <!-- First Image -->
-            <div class="scroll-item">
-                <a href="https://harvarddebate.org/high-school-tournament/">
-                    <img src="11.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://www.ippfdebate.com/">
-                    <img src="12.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://ci.uky.edu/debate/toc">
-                    <img src="13.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-              <a href="https://www.speechanddebate.org/">
-                    <img src="14.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                                <a href="https://www.wsdcdebating.org/">
-                    <img src="15.png" class="img-fluid"></a>
-            </div>
-          </div>
 
-          <h1><br><b>Competitions</b></h1>
-        <h2>Here are some competitions for high school students:</h2>
-        <br><div class="scroll-container">
-            <!-- First Image -->
-            <div class="scroll-item">
-                <a href="https://www.societyforscience.org/regeneron-sts/">
-                    <img src="16.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://www.google.com/search?q=International+Mathematics+Olympiad&sca_esv=60483cdc6baef8bd&rlz=1C1RXQR_enIN1121IN1121&sxsrf=ADLYWIJPKCCedCp-loJXBfwob6LXgwtJpQ%3A1729679097268&ei=-c4YZ-2HEJKR4-EPj-Cr8QU&ved=0ahUKEwit6KvhpKSJAxWSyDgGHQ_wKl4Q4dUDCA8&uact=5&oq=International+Mathematics+Olympiad&gs_lp=Egxnd3Mtd2l6LXNlcnAiIkludGVybmF0aW9uYWwgTWF0aGVtYXRpY3MgT2x5bXBpYWQyBBAAGAMyChAAGIAEGBQYhwIyCxAAGIAEGJECGIoFMgoQABiABBhDGIoFMgsQABiABBiRAhiKBTIFEAAYgAQyChAAGIAEGBQYhwIyBRAAGIAEMgUQABiABDIFEAAYgARIvF1Q7AVYlVZwAXgAkAEAmAGVAqAB6ieqAQYwLjMzLjG4AQPIAQD4AQGYAiOgAtYoqAIUwgIHECMYJxjqAsICExAAGIAEGEMYtAIYigUY6gLYAQHCAgoQIxiABBgnGIoFwgIQEC4YgAQY0QMYQxjHARiKBcICBRAuGIAEwgINEAAYgAQYsQMYFBiHAsICCxAAGIAEGLEDGIMBwgINEAAYgAQYsQMYQxiKBZgDDboGBggBEAEYAZIHBjEuMzMuMaAHjK0C&sclient=gws-wiz-serp">
-                    <img src="17.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://www.competitionsciences.org/competitions/google-science-fair/">
-                    <img src="18.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://www.competitionsciences.org/competitions/intel-international-science-and-engineering-fair/">
-                    <img src="19.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://www.conradchallenge.org/">
-                    <img src="20.png" class="img-fluid"></a>
+
+<main class="container mx-auto mt-8 px-4 md:px-8 lg:px-12">
+    <div>
+        <section>
+            <h1 class="text-center text-4xl font-bold mb-4"><br><br>"We Understand, Everyone has their Own Choices. Check the ECs You Desire"</h1>
+            <h1 class="text-3xl font-bold"><br>Internships</h1>
+            <h2 class="text-2xl">Here are some Internships for high school students:</h2>
+            <br>
+            <div class="overflow-x-auto whitespace-nowrap">
+                <div class="inline-flex space-x-4">
+                    <a href="https://www.cee.org/programs/research-science-institute" class="block">
+                        <img src="1.png" class="img-fluid" alt="Internship 1">
+                    </a>
+                    <a href="https://simr.stanford.edu/" class="block">
+                        <img src="2.png" class="img-fluid" alt="Internship 2">
+                    </a>
+                    <a href="https://www.nasa.gov/learning-resources/internship-programs/nasa-intern-and-fellow-opportunities-for-international-students/" class="block">
+                        <img src="3.png" class="img-fluid" alt="Internship 3">
+                    </a>
+                    <a href="https://www.stonybrook.edu/commcms/garcia/summer_program" class="block">
+                        <img src="4.png" class="img-fluid" alt="Internship 4">
+                    </a>
+                    <a href="https://www.ll.mit.edu/outreach/llrise" class="block">
+                        <img src="5.png" class="img-fluid" alt="Internship 5">
+                    </a>
+                    <a href="https://cssicurriculum.withgoogle.com/" class="block">
+                        <img src="6.png" class="img-fluid" alt="Internship 6">
+                    </a>
+                    <a href="#" class="block">
+                        <img src="7.png" class="img-fluid" alt="Internship 7">
+                    </a>
+                    <a href="https://www.tellurideassociation.org/our-programs/" class="block">
+                        <img src="8.png" class="img-fluid" alt="Internship 8">
+                    </a>
+                    <a href="https://www.si.edu/ofi" class="block">
+                        <img src="9.png" class="img-fluid" alt="Internship 9">
+                    </a>
+                    <a href="https://www.training.nih.gov/research-training/pb/sip/" class="block">
+                        <img src="10.png" class="img-fluid" alt="Internship 10">
+                    </a>
+                </div>
             </div>
             
-          </div>
-          <h1><br><b>Scholarships</b></h1>
-        <h2>Here are some scholarships:</h2>
-        <br><div class="scroll-container">
-            <!-- First Image -->
-            <div class="scroll-item">
-                <a href="https://www.coca-colascholarsfoundation.org/apply/">
-                    <img src="21.png" class="img-fluid"></a>
+            <h1 class="text-3xl font-bold mt-8"><br>Debates</h1>
+            <h2 class="text-2xl">Here are some debate competitions for high school students:</h2>
+            <br>
+            <div class="overflow-x-auto whitespace-nowrap">
+                <div class="inline-flex space-x-4">
+                    <a href="https://harvarddebate.org/high-school-tournament/" class="block">
+                        <img src="11.png" class="img-fluid" alt="Debate 1">
+                    </a>
+                    <a href="https://www.ippfdebate.com/" class="block">
+                        <img src="12.png" class="img-fluid" alt="Debate 2">
+                    </a>
+                    <a href="https://ci.uky.edu/debate/toc" class="block">
+                        <img src="13.png" class="img-fluid" alt="Debate 3">
+                    </a>
+                    <a href="https://www.speechanddebate.org/" class="block">
+                        <img src="14.png" class="img-fluid" alt="Debate 4">
+                    </a>
+                    <a href="https://www.wsdcdebating.org/" class="block">
+                        <img src="15.png" class="img-fluid" alt="Debate 5">
+                    </a>
+                </div>
             </div>
-            <div class="scroll-item">
-                <a href="https://www.thegatesscholarship.org/scholarship">
-                    <img src="22.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://www.jkcf.org/our-scholarships/college-scholarship-program/">
-                    <img src="23.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://www.davidsongifted.org/gifted-programs/fellows-scholarship/">
-                    <img src="24.png" class="img-fluid"></a>
-            </div>
-            <div class="scroll-item">
-                <a href="https://horatioalger.org/scholarships/">
-                    <img src="25.png" class="img-fluid"></a>
-          </div>
-          </div>
-          <h1><br><b>Popular Companies
-            whose programs you wish to see</b></h1>
-            <br><div class="x">
-                <!-- First Image -->
-                <div class="scroll-item">
-                    <a href="">
-                        <img src="26.jpg" class="img-fluid"></a>
-                </div>
-                <div class="scroll-item">
-                    <a href="index.html">
-                        <img src="27.jpg" class="img-fluid"></a>
-                </div>
-                <div class="scroll-item">
-                    <a href="index.html">
-                        <img src="28.jpg" class="img-fluid"></a>
-                </div>
-                <div class="scroll-item">
-                    <a href="index.html">
-                        <img src="29.jpg" class="img-fluid"></a>
-                </div>
-                <div class="scroll-item">
-                 <a href="index.html">
-                        <img src="30.jpg" class="img-fluid"></a>
-                </div>
-                <div class="scroll-item">
-                    <a href="index.html">
-                        <img src="31.jpg" class="img-fluid"></a>
-                </div>
-                </div>
-
-                <h1><br><b>Click on the university
-                    whose programs you wish to see</b></h1>
-                    <br><div class="x">
-                        <!-- First Image -->
-                        <div class="scroll-item">
-                            <a href="https://edgerton.mit.edu/k-12-education">
-                                <img src="MIT.jpg" class="img-fluid"></a>
-                        </div>
-                        <div class="scroll-item">
-                            <a href="https://eso.stanford.edu/curriculum-activities/k-12-curriculum">
-                                <img src="stanford.jpg" class="img-fluid"></a>
-                        </div>
-                        <div class="scroll-item">
-                            <a href="https://www.cmu.edu/gelfand/education/k12-students-parents/index.html">
-                                <img src="CMU.jpg" class="img-fluid"></a>
-                        </div>
-                        <div class="scroll-item">
-                            <a href="https://pll.harvard.edu/subject/k-12">
-                                <img src="Harvard.jpg" class="img-fluid"></a>
-                        </div>
-                        <div class="scroll-item">
-                            <a href="https://crisp.yale.edu/education/k-12">
-                                <img src="Yale.jpg"class="img-fluid"></a>
-                        </div>
-                        <div class="scroll-item">
-                            <a href="https://vpse.upenn.edu/penn-pipeline-programs/k-12-programs/">
-                                <img src="Upenn.jpg" class="img-fluid"></a>
-                        </div>
-                        <div class="scroll-item">
-                            <a href="https://pccm.princeton.edu/education/more-k-12-programs">
-                                <img src="Princeton.jpg" class="img-fluid"></a>
-                          </div>
-                          <div class="scroll-item">
-                            <a href="https://outreach.engineering.columbia.edu/content/k-12-student">
-                                <img src="Columbia.jpg" class="img-fluid"></a>
-                          </div>
-                          <div class="scroll-item">
-                            <a href="https://eecs.berkeley.edu/connect/k-12/programs/">
-                                <img src="UC B.jpg" class="img-fluid"></a>
-                          </div>
-                          <div class="scroll-item">
-                            <a href="https://k12outreach.ucla.edu/">
-                                <img src="UCLA.jpg" class="img-fluid"></a>
-                          </div>
-                        </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer class="footer text-center text-lg-start mt-4">
-        <div class="container-fluid p-4">
-            <h1><b>Worried of getting lost?<br>
-            We are here for you.</b></h1>
-            <a href="aboutus.html" class="btn" target="_blank"><b>About Us</b></a>
-            <a href="index.html" class="btn" target="_blank"><b>Home</b></a>
-            <p><br><b>For any Suggestions, Feel free to connect with us here</b></p>
-            <a href="" class="btn" target="_blank"><b>Have Conversation with Us</b></a>
-            <p><br>Change the World</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html" class="link">Home</a></li>
-                <li class="list-inline-item"><a href="ECs.html" class="link">Extracurriculars</a></li>
-                <li class="list-inline-item"><a href="aboutus.html" class="link">About Us</a></li>
-            </ul>
-          <p>&copy; 2024 Madat. All rights reserved.</p>
-        </div>
-      </footer>
     
-      <!-- Bootstrap and jQuery JS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
-    </html>
+            <h1 class="text-3xl font-bold mt-8"><br>Competitions</h1>
+            <h2 class="text-2xl">Here are some competitions for high school students:</h2>
+            <br>
+            <div class="overflow-x-auto whitespace-nowrap">
+                <div class="inline-flex space-x-4">
+                    <a href="https://www.societyforscience.org/regeneron-sts/" class="block">
+                        <img src="16.png" class="img-fluid" alt="Competition 1">
+                    </a>
+                    <a href="https://www.google.com/search?q=International+Mathematics+Olympiad" class="block">
+                        <img src="17.png" class="img-fluid" alt="Competition 2">
+                    </a>
+                    <a href="https://www.competitionsciences.org/competitions/google-science-fair/" class="block">
+                        <img src="18.png" class="img-fluid" alt="Competition 3">
+                    </a>
+                    <a href="https://www.competitionsciences.org/competitions/intel-international-science-and-engineering-fair/" class="block">
+                        <img src="19.png" class="img-fluid" alt="Competition 4">
+                    </a>
+                    <a href="https://www.conradchallenge.org/" class="block">
+                        <img src="20.png" class="img-fluid" alt="Competition 5">
+                    </a>
+                </div>
+            </div>
+    
+            <h1 class="text-3xl font-bold mt-8"><br>Scholarships</h1>
+            <h2 class="text-2xl">Here are some scholarships:</h2>
+            <br>
+            <div class="overflow-x-auto whitespace-nowrap">
+                <div class="inline-flex space-x-4">
+                    <a href="https://www.coca-colascholarsfoundation.org/apply/" class="block">
+                        <img src="21.png" class="img-fluid" alt="Scholarship 1">
+                    </a>
+                    <a href="https://www.thegatesscholarship.org/scholarship" class="block">
+                        <img src="22.png" class="img-fluid" alt="Scholarship 2">
+                    </a>
+                    <a href="https://www.scholars.honors.uaf.edu/scholarships" class="block">
+                        <img src="23.png" class="img-fluid" alt="Scholarship 3">
+                    </a>
+                    <a href="https://www.brooklynbrooklyncommunityfoundation.org/scholarships" class="block">
+                        <img src="24.png" class="img-fluid" alt="Scholarship 4">
+                    </a>
+                    <a href="https://www.unigo.com/scholarships" class="block">
+                        <img src="25.png" class="img-fluid" alt="Scholarship 5">
+                    </a>
+                </div>
+                
+                <h1 class="text-3xl font-bold mt-8"><br>University Programs</h1>
+            <h2 class="text-2xl">Click on the university whose programs you wish to see</h2>
+            <br>
+            <div class="overflow-x-auto whitespace-nowrap">
+                <div class="inline-flex space-x-4">
+                    <a href="https://edgerton.mit.edu/k-12-education">
+                        <img src="MIT.jpg" class="x">
+                    </a>
+                    <a href="https://eso.stanford.edu/curriculum-activities/k-12-curriculum">
+                        <img src="stanford.jpg" class="x">
+                    </a>
+                    <a href="https://www.cmu.edu/gelfand/education/k12-students-parents/index.html">
+                        <img src="CMU.jpg" class="x">
+                    </a>
+                    <a href="https://pll.harvard.edu/subject/k-12">
+                        <img src="Harvard.jpg" class="x">
+                    </a>
+                    <a href="https://crisp.yale.edu/education/k-12">
+                        <img src="Yale.jpg"class="x">
+                    </a>
+                    <a href="https://vpse.upenn.edu/penn-pipeline-programs/k-12-programs/">
+                        <img src="Upenn.jpg" class="x">
+                    </a>
+                    <a href="https://pccm.princeton.edu/education/more-k-12-programs">
+                        <img src="Princeton.jpg" class="x">
+                    </a>
+                    <a href="https://outreach.engineering.columbia.edu/content/k-12-student">
+                        <img src="Columbia.jpg" class="x">
+                    </a>
+                    <a href="https://eecs.berkeley.edu/connect/k-12/programs/">
+                        <img src="UC B.jpg" class="x">
+                    </a>
+                    <a href="https://k12outreach.ucla.edu/">
+                        <img src="UCLA.jpg" class="x">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JavaScript for toggling menus -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+  
+    // Toggle mobile main menu
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  
+  <!-- Footer -->
+  <footer class="w-full bg-[#a28dff] text-white py-8 justify-center">
+      <div class="container mx-auto px-4 md:px-8 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          
+          <!-- About Section -->
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">About Madat</h3>
+            <p class="text-white text-sm leading-relaxed">
+              Madat is a nonprofit organization dedicated to helping high school students discover meaningful extracurriculars, develop new skills, and build strong portfolios for their futures.
+            </p>
+            <br>
+            <p>We would love to hear your suggestions! Your feedback is invaluable to us as we strive to improve and enhance our offerings. Please feel free to share your thoughts and ideas with us; we appreciate your input!</p>
+          </div>
+      
+          <!-- Quick Links Section -->
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="text-white hover:text-gray-200 transition">Home</a></li>
+              <li><a href="ECs.html" class="text-white hover:text-gray-200 transition">Extracurriculars</a></li>
+              <li><a href="aboutus.html" class="text-white hover:text-gray-200 transition">About Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div>
+            <h3 class="text-white text-lg font-semibold mb-4">Connect with Us</h3>
+            <div class="flex space-x-4">
+              <a href="getmadat.org@gmail.com" class="text-white hover:text-gray-200 transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12zm0 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm2.5 15h-5v-8h5v8zm-2.5-10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
+  
+  
