@@ -1,84 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-       <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0QDC2G7LCZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0QDC2G7LCZ');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Madat</title>
-  <!-- Bootstrap CSS -->
   <link rel="icon" type="image/png" sizes="16x16" href="Madat logo.png">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="mainwork.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body{
+      font-family: 'Times New Roman', Times, serif;
+      }
+  </style>
 </head>
-<body>
+<body class="bg-gray-50">
 
-  <!-- Fixed Navigation Bar -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-          <img src="madat.png" alt="Madat Logo" class="logo-img" style="height: 40px;">
-          Madat
-      </a>
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="bg-white p-4 shadow fixed top-0 left-0 w-full z-50">
+  <div class="container mx-auto flex items-center justify-between">
+    <!-- Brand Logo -->
+    <div class="flex items-center">
+      <img src="madat.png" alt="Brand Logo" class="h-8 w-8 mr-2 rounded-lg"> <!-- Add your logo path here -->
+      <a href="#" class="text-gray-800 text-lg font-semibold">Madat</a>
+    </div>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"><b>Home</b></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="ECs.html"><b>Extracurriculars</b></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="aboutus.html"><b>About Us</b></a>
-          </li>
-        </ul>
+    <!-- Menu Toggle Button (hidden on larger screens) -->
+    <button id="menuToggle" class="text-gray-600 lg:hidden focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Desktop Menu -->
+    <div id="menu" class="hidden lg:flex space-x-4 items-center">
+      <a href="index.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">Home</a>
+      <a href="ECs.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">Extracurriculars</a>
+      <a href="aboutus.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">About Us</a>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="lg:hidden hidden flex-col mt-4 bg-white p-4 rounded-md shadow-md transition duration-300 ease-in-out space-y-3">
+      <a href="index.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">Home</a>
+      <a href="ECs.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">Extracurriculars</a>
+      <a href="aboutus.html" class="text-gray-800 hover:bg-[#a28dff] hover:text-gray-900 px-3 py-2 rounded-md transition">About Us</a>
+    </div> 
+  </div> 
+</nav>
+
+
+<!-- Content -->
+<main class="container mx-auto mt-8 px-4 md:px-8 lg:px-12">
+  <h1 class="text-2xl font-bold text-gray-800"><br><br>Welcome Here😁!</h1>
+  
+  <!-- Tweet Layout -->
+  <div class="bg-white shadow-md rounded-lg p-4 mt-8">
+    <div class="flex items-start">
+      <div class="flex-1">
+        <h4 class="text-3xl font-bold text-gray-800">Struggling to Find Extracurricular Activities in High School? We’ve Got You Covered!</h4>
       </div>
-    </nav>
-  </header>
+    </div>
+  </div>
 
-  <!-- Main Content -->
-  <main class="container mt-4">
-    <!-- Home Section -->
-    <section id="home">
-      <h1><b>Struggling to Find Extracurricular Activities in High School? We’ve Got You Covered!</b></h1><br>
-      <h2>Are you a high school student searching for the perfect extracurriculars but can’t seem to find the right opportunities? Whether you're looking to enhance your skills, explore new interests, or build a strong portfolio for your college applications, the journey can often feel overwhelming.</h2><br>
-      <h2>But don’t worry – we’re here to make things easier for you! We are a nonprofit organization on a mission to empower high school students like you. Our goal is to help you unlock your full potential by providing access to unique and meaningful extracurricular opportunities.</h2><br>
-      <h2>Whether you’re passionate about academics, arts, technology, sports, or social impact, we connect you with activities that align with your strengths and interests. Take the first step toward unlocking your future potential.</h2>
-    </section>
-  </main>
+  <!-- Post Layout -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+    <!-- Post Card 1 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img src="post.jpg" alt="Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-800">Communications user terminal developed by MIT Lincoln Laboratory prepares for historic moon flyby</h2>
+        <p class="text-gray-600 mt-2">Aboard NASA’s Orion spacecraft, the terminal will beam data over laser links during the first crewed lunar mission since 1972.</p>
+          <p>Ariana Tantillo | MIT Lincoln Laboratory</p>
+        <a href="https://news.mit.edu/2024/communications-user-terminal-prepares-for-moon-flyby-1101" class="mt-4 inline-block text-blue-500 hover:underline">Read More</a>
+      </div>
+    </div>
+    <!-- Post Card 2 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img src="post2.jpg" alt="Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-800">Yale Young Global Scholars </h2>
+        <p class="text-gray-600 mt-2">Yale Young Global Scholars (YYGS) is an academic enrichment program for outstanding high school students from around the world. Each summer, students from over 150 countries (including all 50 U.S. states) participate in one interdisciplinary, two-week session at Yale’s historic campus. Immerse yourself in a global learning community at Yale University.</p>
+        <a href="https://globalscholars.yale.edu/?https://globalscholars.yale.edu/&gad_source=1&gclid=Cj0KCQjwm5e5BhCWARIsANwm06jgvZlhDWTtVkDmtVSGMyHKwzlWMteg4ZQvnGjyZMbaJnV_Bnz9ew4aApc9EALw_wcB" class="mt-4 inline-block text-blue-500 hover:underline">Read More</a>
+      </div>
+    </div>
+    <!-- Post Card 3 -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+      <img src="post3.webp" alt="Post Image" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-gray-800">When we say ‘smart’ what do we mean?</h2>
+        <p class="text-gray-600 mt-2">Leslie Valiant, the T. Jefferson Coolidge Professor of Computer Science and Applied Mathematics at the John H. Paulson School of Engineering and Applied Sciences, has spent decades studying human cognition. His books include “Circuits of the Mind” and, most recently, “The Importance of Being Educable.”</p>
+        <a href="https://news.harvard.edu/gazette/story/2024/10/your-mom-says-youre-so-smart-what-does-she-mean/" class="mt-4 inline-block text-blue-500 hover:underline">Read More</a>
+      </div>
+    </div>
+    <!-- Add more posts as needed -->
+  </div>
+  <div class="bg-white shadow-md rounded-lg p-4 mt-8">
+    <div class="flex items-start">
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold text-gray-800">Are you a high school student searching for the perfect extracurriculars but can’t seem to find the right opportunities? Whether you're looking to enhance your skills, explore new interests, or build a strong portfolio for your college applications, the journey can often feel overwhelming.
+<br><br>
+            But don’t worry – we’re here to make things easier for you! We are a nonprofit organization on a mission to empower high school students like you. Our goal is to help you unlock your full potential by providing access to unique and meaningful extracurricular opportunities.
+<br><br>
+            Whether you’re passionate about academics, arts, technology, sports, or social impact, we connect you with activities that align with your strengths and interests. Take the first step toward unlocking your future potential.
+        </h2>
+      </div>
+    </div>
+  </div>
 
-  <!-- Footer -->
-  <footer class="footer text-center text-lg-start mt-4 w-100">
-    <div class="p-4">
-      <h1><b>Worried of getting lost?<br>We are here for you.</b></h1>
-      <a href="ECs.html" class="btn" target="_blank"><b>Extracurriculars</b></a>
-      <a href="aboutus.html" class="btn" target="_blank"><b>About Us</b></a>
-      <p><br><b>For any Suggestions, Feel free to connect with us here</b></p>
-      <a href="" class="btn" target="_blank"><b>Have Conversation with Us</b></a>
-      <p><br>Change the World</p>
-      <ul class="list-inline">
-          <li class="list-inline-item"><a href="index.html" class="link">Home</a></li>
-          <li class="list-inline-item"><a href="ECs.html" class="link">Extracurriculars</a></li>
-          <li class="list-inline-item"><a href="aboutus.html" class="link">About Us</a></li>
-      </ul>
-      <p>&copy; 2024 Madat. All rights reserved.</p>
+  <br><br>
+</main>
+
+<!-- JavaScript for toggling menus -->
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  // Toggle mobile main menu
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+<!-- Footer -->
+<footer class="w-full bg-[#a28dff] text-white py-8 justify-center">
+    <div class="container mx-auto px-4 md:px-8 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        
+        <!-- About Section -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">About Madat</h3>
+          <p class="text-white text-sm leading-relaxed">
+            Madat is a nonprofit organization dedicated to helping high school students discover meaningful extracurriculars, develop new skills, and build strong portfolios for their futures.
+          </p>
+          <br>
+          <p>We would love to hear your suggestions! Your feedback is invaluable to us as we strive to improve and enhance our offerings. Please feel free to share your thoughts and ideas with us; we appreciate your input!</p>
+        </div>
+    
+        <!-- Quick Links Section -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-white hover:text-gray-200 transition">Home</a></li>
+            <li><a href="ECs.html" class="text-white hover:text-gray-200 transition">Extracurriculars</a></li>
+            <li><a href="aboutus.html" class="text-white hover:text-gray-200 transition">About Us</a></li>
+          </ul>
+        </div>
+    
+        <!-- Social Media Section -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">Connect with Us</h3>
+          <div class="flex space-x-4">
+            <a href="getmadat.org@gmail.com" class="text-white hover:text-gray-200 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12zm0 2c-5.5 0-10 4.5-10 10s4.5 10 10 10 10-4.5 10-10-4.5-10-10-10zm2.5 15h-5v-8h5v8zm-2.5-10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
-
-  <!-- Bootstrap and jQuery JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
